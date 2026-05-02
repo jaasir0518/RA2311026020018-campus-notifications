@@ -1,0 +1,10 @@
+{
+  "name": "notification-app-be",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "../notification_app_fe/node_modules/.bin/tsc -p ../logging_middleware/tsconfig.json && ../notification_app_fe/node_modules/.bin/tsc -p tsconfig.json",
+    "stage1": "node dist/stage1.js"
+  }
+}
